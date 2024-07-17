@@ -6,11 +6,11 @@ import { ReactNode } from 'react';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-export interface CardProps extends Vehicle {
+export interface EditCardProps extends Vehicle {
   view: 'tiles' | 'list';
 }
 
-export const Card = (props: CardProps): ReactNode => {
+export const Card = (props: EditCardProps): ReactNode => {
   const styleForCard = props.view == 'tiles' ? ' flex-col gap-4' : ' flex-row';
 
   const dispatch = useDispatch<AppDispatch>();
