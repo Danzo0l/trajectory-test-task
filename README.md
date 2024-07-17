@@ -1,6 +1,6 @@
 # Task 4
 
-React Project for course T1. Implementation of the web interface.
+Тестовое задание для комании Траектория.
 
 ## Get started
 
@@ -24,3 +24,4 @@ Format code (Prettier): `npm run format`
 ## Stack
 
 `Typescript` `React` `Tailwind` `SCSS` `RTK`
+
