@@ -1,11 +1,14 @@
+import { Routing } from '@/pages';
 import { withProviders } from './providers';
+import Header from '@/components/Header';
 
 // eslint-disable-next-line react-refresh/only-export-components
 function App() {
   return (
-    <>
-      <h1>Hello world!</h1>
-    </>
+    <div className="box-border min-h-screen h-auto dark:bg-gray-900 relative">
+      <Header />
+      <Routing />
+    </div>
   );
 }
 
