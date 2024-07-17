@@ -6,7 +6,7 @@ interface ErrorProps {
   message: string;
 }
 
-const Header = (props: ErrorProps): ReactNode => {
+const Error = (props: ErrorProps): ReactNode => {
   return (
     <section className="bg-white dark:bg-gray-900 h-full flex items-center p-2">
       <div className="mx-auto max-w-screen-sm text-center">
@@ -27,4 +27,4 @@ const Header = (props: ErrorProps): ReactNode => {
   );
 };
 
-export default Header;
+export default Error;
