@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 // eslint-disable-next-line react-refresh/only-export-components
 function App() {
   return (
-    <div className="box-border h-full dark:bg-gray-900 relative">
+    <div className="box-border min-h-screen h-auto dark:bg-gray-900 relative">
       <Header />
       <Routing />
     </div>

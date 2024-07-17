@@ -2,15 +2,13 @@ import { Vehicle } from '@/models/Vehicle.interface';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const vehiclesApi = createApi({
-  reducerPath: 'setup/api',
+  reducerPath: 'vehiclesApi',
   baseQuery: fetchBaseQuery({
     baseUrl: 'https://test.tspb.su/test-task/',
   }),
-  endpoints: (build) => ({
-    getVehicles: build.query<Vehicle[], void>({
-      query: () => ({
-        url: 'vehicles',
-      }),
+  endpoints: (builder) => ({
+    getVehicles: builder.query<Vehicle[], void>({
+      query: () => 'vehicles',
     }),
   }),
 });
